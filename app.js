@@ -6,8 +6,8 @@ function getRandomRgbNumber () {
 };
 
 function getRandomRadius () {
-    min = Math.ceil(0);
-    max = Math.floor(201);
+    min = Math.ceil(1);
+    max = Math.floor(101);
     return Math.floor(Math.random() * (max - min) + min);
 };
 
