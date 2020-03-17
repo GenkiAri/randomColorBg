@@ -5,9 +5,20 @@ function getRandomRgbNumber () {
     return Math.floor(Math.random() * (max - min) + min);
 };
 
+function getRandomRadius () {
+    min = Math.ceil(0);
+    max = Math.floor(201);
+    return Math.floor(Math.random() * (max - min) + min);
+};
 
-let a = getRandomRgbNumber().toString(16);
 
-console.log(a);
 
-document.getElementById("bgColor").style.background = "#" + a;
+function changeBgColorResult () {
+    let a = getRandomRgbNumber().toString(16);
+    document.getElementById("bgColor").style.background = "#" + a;
+    console.log(a);
+    let b = getRandomRadius() + 'px'
+    console.log(b);
+    document.getElementById("bgColor").style.borderRadius = b;
+};
+
