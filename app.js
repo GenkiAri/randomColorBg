@@ -16,7 +16,10 @@ function getRandomRadius () {
 function changeBgColorResult () {
     let a = getRandomRgbNumber().toString(16);
     document.getElementById("bgColor").style.background = "#" + a;
+    document.getElementById("colorCode").textContent = "Hex color code " + a;
+
     console.log(a);
+
     let b = getRandomRadius() + 'px'
     console.log(b);
     document.getElementById("bgColor").style.borderRadius = b;
